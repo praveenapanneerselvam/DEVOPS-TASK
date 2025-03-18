@@ -10,8 +10,8 @@ sudo apt update && sudo apt upgrade -y
 
 sudo apt install -y openjdk-17-jdk
 ```
-![Jenkins Setup Screen](java1.png)
-![Jenkins Setup Screen](java2.png)
+![Jenkins Setup Screen](Java1.png)
+![Jenkins Setup Screen](Java2.png)
 
 Set Java 17 as the default version:
 ```bash
