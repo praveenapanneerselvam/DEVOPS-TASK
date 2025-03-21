@@ -9,19 +9,19 @@ sudo apt install -y docker.io
 sudo systemctl enable docker --now
 docker --version
 ```
-![Jenkins Setup Screen](docker1.png)
+![Jenkins Setup Screen](/Images/Task2/docker1.png)
 
 
-![Jenkins Setup Screen](docker2.png)
+![Jenkins Setup Screen](/Images/Task2/docker2.png)
 
 
-![Jenkins Setup Screen](docker3.png)
+![Jenkins Setup Screen](/Images/Task2/docker3.png)
 
 
-![Jenkins Setup Screen](docker4.png)
+![Jenkins Setup Screen](/Images/Task2/docker4.png)
 
 
-![Jenkins Setup Screen](docker5.png)
+![Jenkins Setup Screen](/Images/Task2/docker5.png)
 ---
 
 ## Installing Docker Plugins in Jenkins
@@ -33,7 +33,7 @@ docker --version
    - **docker-build-step**
    - **CloudBees Docker Build and Publish**
 3. Check the **Restart Jenkins after installation** box to restart Jenkins.
-![Jenkins Setup Screen](plugin.png)
+![Jenkins Setup Screen](/Images/Task2/plugin.png)
 ---
 
 ## Adding Jenkins to the Docker Group
@@ -52,7 +52,7 @@ sudo reboot
    - **Username**: Your Docker Hub username.
    - **Password**: Your Docker Hub password.
    - **ID**: `docker-seccred`
-![Jenkins Setup Screen](createcreden.png)
+![Jenkins Setup Screen](/Images/Task2/createcreden.png)
 ---
 
 ## Creating and Building a Pipeline in Jenkins
@@ -63,11 +63,11 @@ sudo reboot
 3. Select **Pipeline** and click **OK**.
 4. Navigate to the **Pipeline** section.
 5. Paste the following Jenkinsfile script, updating it as needed.
-![Jenkins Setup Screen](project.png)
+![Jenkins Setup Screen](/Images/Task2/project.png)
 
-![Jenkins Setup Screen](configure.png)
+![Jenkins Setup Screen](/Images/Task2/configure.png)
 
-![Jenkins Setup Screen](console.png)
+![Jenkins Setup Screen](/Images/Task2/console.png)
 ```groovy
 pipeline {
     agent any
@@ -141,7 +141,7 @@ pipeline {
 ## Verifying Deployment
 1. Once the build is successful, visit `http://localhost:3001` in your browser.
 2. Ensure the application is running properly.
-![Jenkins Setup Screen](pipeline.png)
+![Jenkins Setup Screen](/Images/Task2/pipeline.png)
 ---
 
 ## Conclusion

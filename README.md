@@ -10,8 +10,8 @@ sudo apt update && sudo apt upgrade -y
 
 sudo apt install -y openjdk-17-jdk
 ```
-![Jenkins Setup Screen](Java1.png)
-![Jenkins Setup Screen](Java2.png)
+![Jenkins Setup Screen](/Images/Task1/Java1.png)
+![Jenkins Setup Screen](/Images/Task1/Java2.png)
 
 Set Java 17 as the default version:
 ```bash
@@ -37,8 +37,8 @@ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
 sudo apt-get update
 sudo apt-get install -y jenkins
 ```
-![Jenkins Setup Screen](jenkin1.png)
-![Jenkins Setup Screen](jenkin2.png)---
+![Jenkins Setup Screen](/Images/Task1/jenkin1.png)
+![Jenkins Setup Screen](/Images/Task1/jenkin2.png)---
 
 ## 🔹 Starting & Enabling Jenkins
 To ensure Jenkins runs smoothly, start and enable it:
@@ -47,11 +47,11 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo systemctl status jenkins
 ```
-![Jenkins Setup Screen](enable.png)
+![Jenkins Setup Screen](/Images/Task1/enable.png)
 ```
 Copy the **initial admin password** displayed in this step.
 ```
-![Jenkins Setup Screen](pass.png)
+![Jenkins Setup Screen](/Images/Task1/pass.png)
 
 
 
@@ -70,7 +70,7 @@ Copy the **initial admin password** displayed in this step.
 6. Create a **username and password** for future logins.
    ⚠️ **Remember these credentials** – they replace the initial password.
 7. Leave the default Jenkins URL and click **Save and Finish**.
-![Jenkins Setup Screen](jen.png)
+![Jenkins Setup Screen](/Images/Task1/jen.png)
 ---
 
 ## 🌍 Deploying an Nginx Project with Jenkins
@@ -80,14 +80,14 @@ Now that Jenkins is up and running, let’s create a **Freestyle Project** to in
 1. Go to **Jenkins Dashboard** → Click **Create a Job**.
 2. Enter a **Project Name**.
 3. Choose **Freestyle Project** and click **OK**.
- ![Jenkins Setup Screen](free.png)
- ![Jenkins Setup Screen](start.png)
-![Jenkins Setup Screen](ready.png)
+ ![Jenkins Setup Screen](/Images/Task1/free.png)
+ ![Jenkins Setup Screen](/Images/Task1/start.png)
+![Jenkins Setup Screen](/Images/Task1/ready.png)
 1. Scroll to **Build Steps**.
  
 1. Click **Add Build Step** → Select **Execute Shell**.
- ![Jenkins Setup Screen](shell.png)
-![Jenkins Setup Screen](build.png)
+ ![Jenkins Setup Screen](/Images/Task1/shell.png)
+![Jenkins Setup Screen](/Images/Task1/build.png)
 1. Paste the following script:
 
 ```bash
@@ -113,7 +113,7 @@ systemctl status nginx
 ## ✅ Verifying the Deployment
 - Go to **Builds** → Click the latest **Build**.
 - Navigate to **Console Output** to view logs.
-- ![Jenkins Setup Screen](console.png)
+- ![Jenkins Setup Screen](/Images/Task1/console.png)
 - To confirm Nginx is running, open your browser and go to `http://localhost`.
 
  We’ve successfully deployed Nginx using Jenkins!**

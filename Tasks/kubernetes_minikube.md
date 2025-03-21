@@ -5,7 +5,7 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y curl wget apt-transport-https conntrack socat
 ```
-![Jenkins Setup Screen](mini1.png)
+![Jenkins Setup Screen](/Images/Task3/mini1.png)
 
 ## Install Docker, Kubectl, and Minikube
 
@@ -24,9 +24,9 @@ chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
 kubectl version --client
 ```
-![Jenkins Setup Screen](1.png)
+![Jenkins Setup Screen](/Images/Task3/1.png)
 
-![Jenkins Setup Screen](2.png)
+![Jenkins Setup Screen](/Images/Task3/2.png)
 
 
 ### Install Minikube
@@ -54,17 +54,17 @@ docker run hello-world
 minikube start --driver=docker
 minikube dashboard
 ```
-![Jenkins Setup Screen](3.png)
+![Jenkins Setup Screen](/Images/Task3/3.png)
 
-![Jenkins Setup Screen](4.png)
+![Jenkins Setup Screen](/Images/Task3/4.png)
 ## Deploying the Docker Image from DockerHub
 ```sh
 mkdir docker
 nano Dockerfile
 ```
-![Jenkins Setup Screen](5.png)
+![Jenkins Setup Screen](/Images/Task3/5.png)
 
-![Jenkins Setup Screen](6.png)
+![Jenkins Setup Screen](/Images/Task3/6.png)
 ### Initialize NPM
 ```sh
 npm init -y
@@ -87,9 +87,9 @@ docker ps -a
 sudo nano nginx-deployment.yaml
 kubectl apply -f nginx-deployment.yaml
 ```
-![Jenkins Setup Screen](7.png)
+![Jenkins Setup Screen](/Images/Task3/7.png)
 
-![Jenkins Setup Screen](8.png)
+![Jenkins Setup Screen](/Images/Task3/8.png)
 ### Create Service
 ```sh
 sudo nano service.yaml
@@ -101,7 +101,7 @@ kubectl apply -f service.yaml
 kubectl get pods
 minikube get svc my-app
 ```
-![Jenkins Setup Screen](last.png)
+![Jenkins Setup Screen](/Images/Task3/last.png)
 ### Access the Service
 ```sh
 minikube service my-app --url
@@ -110,4 +110,4 @@ Open the provided URL in a browser or test it with:
 ```sh
 curl <url>
 ```
-![Jenkins Setup Screen](last2.png)
+![Jenkins Setup Screen](/Images/Task3/last2.png)
